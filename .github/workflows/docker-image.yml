@@ -17,6 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker image build . -t apache_web
     - name: deploy Docker image
-      run: docker run -d -p 8080:8080 apache_web:latest
+      run: docker run -d -p 8080:80 apache_web:latest
     - name: Test App in Container
       run: curl -v http://localhost:8080/
