@@ -19,4 +19,4 @@ jobs:
     - name: deploy Docker image
       run: docker run -d -p 8080:8080 apache_web:latest
     - name: Test App in Container
-      run: curl -v http://localhost:8080/data
+      run: curl -v http://localhost:8080/
